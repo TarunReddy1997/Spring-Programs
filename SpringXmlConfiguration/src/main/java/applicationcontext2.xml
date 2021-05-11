@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "sampleObj" class = "com.ojas.app.SpringXmlConfiguration.model.Employee2">
+    <property name = "id" value = "1234"/>
+     <property name = "name" value = "Tarun"/>
+      <property name="phoneno">
+      <set>
+      <value>9879060</value>
+      <value>9879060</value>
+      <value>9879320</value>
+      <value>9879230</value>
+      </set>
+      </property>
+      <property name="projects">
+      <map>
+      <entry key="project1" value="java"></entry>
+      <entry key="project2" value="python"></entry>
+      </map>
+      </property>
+      
+   </bean>
+
+</beans>

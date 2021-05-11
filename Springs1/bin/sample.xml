@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+	<bean id="s1" class="org.j.app.Student">
+		<constructor-arg value="123"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>firstName</value>
+				<value>middleName</value>
+				<value>lastName</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg value="76.54"></constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry Key="maths" value="72.00"></entry>
+				<entry Key="science" value="65.00"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+</beans>
